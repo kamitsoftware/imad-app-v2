@@ -17,9 +17,11 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('imad-app-v2/clip_image002.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'imad-app-v2', 'clip_image002.jpg'));
+app.get('imad-app-v2/ui/Screenshot_1.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Screenshot_1.png'));
 });
+
+
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
