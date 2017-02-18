@@ -11,13 +11,13 @@ var articleone={
     date:'Feb 5,2017',
     content:`
     <p>
-                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .
+                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
               </p>
               <p>
-                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .
+                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
               </p>
               <p>
-                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .this is my first article .
+                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
               </p>`
     
     
