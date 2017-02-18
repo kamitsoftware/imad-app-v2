@@ -10,11 +10,11 @@ app.get('/article-one',function(req,res){
   res.send('this is my first text');
 });
 
-app.get('/article two',function(req,res){
+app.get('/article-two',function(req,res){
   res.send('this is my second text');
 });
 
-app.get('/article three',function(req,res){
+app.get('/article-three',function(req,res){
   res.send('this is my third article');
 });
 
