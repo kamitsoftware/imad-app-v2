@@ -5,22 +5,44 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone={
-    title:'Article One',
-    heading:'Article One',
-    date:'Feb 5,2017',
-    content:`
-    <p>
-                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
-              </p>
-              <p>
-                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
-              </p>
-              <p>
-                  this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
-              </p>`
+var articles={
+    
+'article-one':{
+                title:'Article One',
+                heading:'Article One',
+                date:'Feb 5,2017',
+                content:`
+                <p>
+                this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
+                </p>
+                <p>
+                this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
+                </p>
+                <p>
+                this is my first article .this is my first article .this is my first article .this is my first article .this is my first article . .
+                </p>`
     
     
+},
+'article-two':{
+                title:'Article Two',
+                heading:'Article Two',
+                date:'Feb 5,2017',
+                content:`
+                <p>
+                this is my second article  . .
+                </p>`
+    
+},
+'article-three':{
+                title:'Article Three',
+                heading:'Article Three',
+                date:'Feb 5,2017',
+                content:`
+                <p>
+                this is my third article  . .
+                </p>`
+    },
 };
 
 function createTemplate(data){
@@ -65,11 +87,12 @@ return htmlTemplate;
 }
 
 
-app.get('/article-one',function(req,res){
-  res.send(createTemplate(articleone));
+app.get(':articleName',function(req,res){
+    var articleName=req.params.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/article-two',function(req,res){
+/*app.get('/article-two',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
@@ -91,7 +114,7 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/ui/Screenshot_1.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Screenshot_1.png'));
-});
+});*/
 
 
 
