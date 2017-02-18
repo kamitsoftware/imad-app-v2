@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-app.get('/article one',function(req,res){
+app.get('/article-one',function(req,res){
   res.sendFile('this is my first text');
 });
 
