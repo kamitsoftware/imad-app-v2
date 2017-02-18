@@ -7,15 +7,15 @@ app.use(morgan('combined'));
 
 
 app.get('/article-one',function(req,res){
-  res.sendFile('this is my first text');
+  res.send('this is my first text');
 });
 
 app.get('/article two',function(req,res){
-  res.sendFile('this is my second text');
+  res.send('this is my second text');
 });
 
 app.get('/article three',function(req,res){
-  res.sendFile('this is my third article');
+  res.send('this is my third article');
 });
 
 app.get('/', function (req, res) {
