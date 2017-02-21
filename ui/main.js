@@ -7,7 +7,7 @@ element.innerHTML='new value';
 
 // move the image 
  
- var img = document.getElementById('Screenshot_1');
+ var img = document.getElementById('madi');
  img.onclick=function(){
    img.style.marginLeft='1000px';  
  };
