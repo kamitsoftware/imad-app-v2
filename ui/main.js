@@ -9,5 +9,5 @@ element.innerHTML='new value';
  
  var img = document.getElementById('Screenshot_1');
  img.onclick=function(){
-   img.style.marginLeft='100px';  
+   img.style.marginLeft='1000px';  
  };
