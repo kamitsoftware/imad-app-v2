@@ -8,6 +8,6 @@ element.innerHTML='new value';
 // move the image 
  
  var img = document.getElementById('Screenshot_1');
- Screenshot_1.onclick=function(){
-   Screenshot_1.style.marginLeft='100px';  
+ img.onclick=function(){
+   img.style.marginLeft='100px';  
  };
