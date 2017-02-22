@@ -6,8 +6,14 @@ body {
 
 .center {
     text-align: center;
+     text-shadow: 3px 2px red;
 }
 
+.center1{
+    text-align:left;
+    padding-left:90px;
+    
+}
 .text-big {
     font-size: 300%;
 }
