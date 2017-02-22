@@ -6,12 +6,12 @@ body {
 
 .center {
     text-align: center;
-     text-shadow: 3px 2px red;
+     text-shadow: 3px 2px white;
 }
 
 .center1{
     text-align:left;
-    padding-left:90px;
+    padding-left:300px;
     
 }
 .text-big {
