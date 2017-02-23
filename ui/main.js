@@ -39,7 +39,7 @@ element.innerHTML='new value';
      span.innerHTML=counter.toString();
          }
      };
-   request.open('GET','http://http://kamitsoftware.imad.hasura-app.io/counter',true);
+   request.open('GET','http://kamitsoftware.imad.hasura-app.io/counter',true);
    request.send(null);
  };
  
