@@ -22,9 +22,25 @@ element.innerHTML='new value';
  var counter=0;
  var button= document.getElementById('counter');
  button.onclick=function(){
-     counter=counter+1;
+     //make a requst to the counter endpoint
+     var request= new XMLHttpRequest();
+     
+     //capture the response and store in variable
+     request.onreadystatechange = function()
+     {
+         if ( request.readyState === XMLHttpRequest.DONE)
+         
+         //take some action
+         if(request.status===200)
+         {
+           var counter=  request.responseText;
+               //counter=counter+1;
      var span=document.getElementById('count');
      span.innerHTML=counter.toString();
+         }
+     };
+   request.open('GET','http://http://kamitsoftware.imad.hasura-app.io/counter',true);
+   request.send(null);
  };
  
  
