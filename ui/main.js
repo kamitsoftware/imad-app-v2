@@ -1,9 +1,9 @@
 console.log('Loaded!');
 
 // change the text of the main text div
-/*var element= document.getElementById('main-text');
+var element= document.getElementById('main-text');
 
-element.innerHTML='new value';*/
+element.innerHTML='new value';
 
 // move the image 
  
@@ -26,3 +26,5 @@ element.innerHTML='new value';*/
      var span=document.getElementById('count');
      span.innerHTML=counter.toString();
  };
+ 
+ 
