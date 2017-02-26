@@ -102,6 +102,15 @@ app.get('/:articleName',function(req,res){
   res.send(createTemplate(articles[articleName]));
 });
 
+
+var names=[];
+app.get('/submit-name/:name' , function(req,res){//url:/submit-name?name=aaa
+    var name=req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
+
+
 app.get('/ui/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one'));
 });
@@ -122,12 +131,6 @@ app.get('/ui/Screenshot_1.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Screenshot_1.png'));
 });
 
-var names=[];
-app.get('/submit-name/:name' , function(req,res){
-    var name=req.params.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
